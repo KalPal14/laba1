@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Фигаро</title>
+   <link rel="stylesheet" type="text/css" href="./src/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header_flex">
+            <div class="logo header_logo">
+               <img src="https://salonlustr.com.ua/images/_qload/delivery.png" alt="Логотип">
+               <h3>Фигаро</h3>
+            </div>
+
+            <div class="menu_burger">
+               <span></span>
+
+
+               <ul class="menu_list menu_list_hidden">
+                  <li class="menu_divide" id='aboutUs'>О нас</li>
+                  <li class="menu_divide" id='checkout'>Оформить заказ</li>
+                  <li class="menu_divide" id='reviews'>Отзывы</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <section class="about_us container">
+      <h1 class="heading" id="AboutUs">О нас</h1>
+      <div class="elem_to_center"><span class="line"></span></div>
+      <p>Группа «Фигаро» предоставляет клиентам - как бизнесу, так и частным лицам - полный спектр логистических и
+         связанных с ними услуг. В Группу входят украинские и зарубежные компании, в частности «Нова Пошта», «НП
+         Логистик», «ПОСТ ФИНАНС» и «Фигаро Глобал».
+
+         «Фигаро» - лидер логистического рынка, который обеспечивает легкую доставку каждому клиенту - до отделения,
+         почтомата, по адресу – и позволяет тысячам предпринимателей создавать и развивать бизнес не только в Украине,
+         но и за границей. Сеть компании насчитывает более 6000 отделений по всей Украине, а количество отправлений
+         только за 2019 год превысило 212 млн.
+
+         «НП Логистик» - компания, предоставляющая услуги фулфилмента: хранение товара на складах, комплектацию и
+         отправление заказов получателю.
+
+         «ПОСТ ФИНАНС» - небанковское финансовое учреждение, благодаря которому клиенты компании могут осуществлять
+         денежные переводы и операции с электронными деньгами.
+
+         «Фигаро Глобал» развивает международную партнерскую сеть, чтобы предоставлять клиентам услуги
+         экспресс-доставки не только в Украине, но и за границей.
+
+         Группа «Фигаро», по данным ГФС, входит в ТОП-100 крупнейших плательщиков налогов в Украине. За 2019 год
+         Группа перечислила в бюджеты всех уровней страны свыше 4,3 млрд грн налогов и сборов.
+
+         «Фигаро» - один из крупнейших в Украине работодателей, сейчас в компании работает более 28 000 человек.
+
+         «Фигаро» - социально ответственная компания, развивает ряд социальных и экологических проектов. Например,
+         «Гуманитарная почта» з 2014 года доставляет грузы для волонтеров, на сегодняшний день сотрудничает с 131
+         волонтерской организацией. Компания активно внедряет сбор вторсырья в своих отделениях и на терминалах. С
+         апреля 2019 года постепенно переходит на новый тип упаковки: вместо пенопласта будет использоваться бумага
+         вторичной переработки.
+
+         Миссия компании - легкость доставки для жизни и бизнеса. Для этого команда «Фигаро» внедряет новые продукты
+         и сервисы, ориентируясь на международные стандарты и лучший мировой опыт.</p>
+   </section>
+
+   <section class="checkout container">
+      <h1 class="heading" id="Checkout">Оформить заказ</h1>
+      <div class="elem_to_center"><span class="line"></span></div>
+
+      <article>
+         <form class="checkout_form">
+            <div class="checkout_cites">
+               <select id="from">
+                  <option value="0">От куда</option>
+                  <option value="25">Киев</option>
+                  <option value="28">Харьков</option>
+                  <option value="40">Одесса</option>
+                  <option value="32">Запорожье</option>
+                  <option value="27">Днепр</option>
+                  <option value="34">Кривой рог</option>
+                  <option value="50">Львов</option>
+               </select>
+
+               <select id="where">
+                  <option value="0">От куда</option>
+                  <option value="25">Киев</option>
+                  <option value="28">Харьков</option>
+                  <option value="40">Одесса</option>
+                  <option value="32">Запорожье</option>
+                  <option value="27">Днепр</option>
+                  <option value="34">Кривой рог</option>
+                  <option value="50">Львов</option>
+               </select>
+            </div>
+
+            <div class="checkout_other-inf">
+               <input id="weight" type="text" placeholder="Укажите вес посылки (кг)">
+               <select id="way">
+                  <option value="0">Способ доставки</option>
+                  <option value="30">Экспресс</option>
+                  <option value="1">Стандарт</option>
+                  <option value="-20">Эконом</option>
+               </select>
+            </div>
+
+            <input type="submit" class="checkout_submit">
+
+         </form>
+
+         <div class="checkout_total">
+            <h1 class="checkout_total-h1">С вас <span>0</span> грн</h1>
+         </div>
+      </article>
+
+   </section>
+
+   <section class="reviews container">
+      <h1 class="heading" id="Reviews">Отзывы</h1>
+      <div class="elem_to_center"><span class="line"></span></div>
+      <div id="reactContainer"></div>
+   </section>
+
+   <footer class="footer">
+      <div class="all_to_senter">
+         <img src="https://salonlustr.com.ua/images/_qload/delivery.png" alt="Logo" class="footer_logo logo">
+         <h3>Фигаро</h3>
+         <h6>Мы работаем для вас</h6>
+      </div>
+   </footer>
+
+
+   <script src="./dist/bundle.js"></script>
+
+</body>
+
+</html>
